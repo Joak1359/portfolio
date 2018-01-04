@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!-- Dette metatag sørger for, at fortælle hvordan browseren skal aflæse en lang række tegn (et charset), så dokumentet giver mening for browseren. utf-8 er den mest brugte attributværdi for dette metatag, da dette charset indeholder alle de mest gængse tegn -->
+    <meta charset="utf-8">
+    <!-- Sikrer at browsers understøtter dokumentet -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Gør så browseren skalerer siden til at passe skærmen det bliver vist på. Lige meget om den er smal eller bred. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- De øverste 3 metatags skal komme først, og placeres først i <head>. Alt andet indhold i <head> skal placeres under det, da dokumentet altid aflæses og loades fra top til bund. -->
+    <title>Læringsportfolio</title>
+
+    <!-- Bootstrap bibliotek -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Mit CSS -->
+    <link href="portfolio.css" rel="stylesheet">
+</head>
+<!-- Her starter <body> hvori jeg har alt indholdet -->
+
+<body>
+    <!-- Her starter <header>, som indeholder min navbar. -->
+    <header>
+        <!-- Her starter navigeringsbaren fra Bootstraps "bibliotek" -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <!-- container-fluid bruger man for at få fuld brede på sin container, så den fylder hele bredden af din viewport. -->
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <!-- Specificering af hvordan navbaren skal reagere når den "kollapser" til en mindre bredde, og burger-menuen vises.  -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                </div>
+                <!-- Sørger for at gemme menuerne fra den brede navbar, så det kun er burgermenuen der sees -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <!-- Denne kode henter det information fra Bootstrap biblioteket, som gør så knapperne i navbaren bliver vist korrekt. -->
+                    <ul class="nav navbar-nav">
+                        <!-- Dette er "Forside" knappen i navbaren. Dens class er sat til "active" for at den heletiden vil være mørk. -->
+                        <li class="active"><a href="index.html">Forside</a></li>
+                        <!-- Indikerer at det skal være en dropdown liste, og at listen til Design og Visualisering starter her.-->
+                        <li class="dropdown">
+                            <!-- Gør det muligt at "toggle" Design og Visualisering dropdown menuen -->
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Design og Visualisering<span class="caret"></span></a>
+                            <!-- Unordered liste i den første dropdown-menu starter her -->
+                            <ul class="dropdown-menu">
+                                <!-- Links til de andre html dokumenter / de andre "sider" på websitet starter her-->
+                                <li><a href="farveteori.html">Farveteori</a></li>
+                                <li><a href="gestaltlove.html">Gestalt love</a></li>
+                                <li><a href="typografi.html">Typografi</a></li>
+                                <li><a href="adobeprogrammer.html">Raster- og Vektorgrafik</a></li>
+                                <!-- En "seperator" som laver en vandret linie i menuen, for at adskille adobeprogrammerne fra det resterende teori i dropdown menuen -->
+                                <li role="separator" class="divider"></li>
+                                <!-- Hashtag tilføjet til fil-navn for at indikere et specifikt sted på siden hvor til linket skal føre hen. I det nedenstående eksempel fører linket brugeren til illustrator sektionen, i html dokumentet "adobeprogrammer.html", da jeg der har givet illustratoroverskriften id'et "iltop". -->
+                                <li><a href="adobeprogrammer.html#iltop">Illustrator</a></li>
+                                <li><a href="adobeprogrammer.html#pstop">Photoshop</a></li>
+                                <li><a href="adobeprogrammer.html#idtop">InDesign</a></li>
+                                <li><a href="adobeprogrammer.html#vptop">Videoproduktion</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Interaktionsudvikling<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="internettets_historie.html">Internettets historie</a></li>
+                                <li><a href="serveren.html">Serveren</a></li>
+                                <li><a href="htmlcss.html">HTML</a></li>
+                                <li><a href="htmlcss.html">CSS</a></li>
+                                <li><a href="wireframes.html">Wireframe</a></li>
+                                <li><a href="layoutformer.html">Layoutformer</a></li>
+                                <li><a href="css_grids.html">CSS Grid</a></li>
+                                <li><a href="farver.html">Farvekoder</a></li>
+                                <li><a href="mobilevsdesktop_first.html">Mobile/Desktop First</a></li>
+                                <li><a href="frameworks.html">Frameworks</a></li>
+                                <li><a href="versionsstyring.html">Versionsstyring</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Kommunikation og formidling<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mediebegreber.html">Mediebegreber</a></li>
+                                <li><a href="de5nyhedskriterier.html">De 5 Nyhedskriterier</a></li>
+                                <li><a href="nyhedstrekanten.html">Nyhedstrekanten</a></li>
+                                <li><a href="rough_sketching.html">Rough Sketching</a></li>
+                                <li><a href="storyboard.html">Storyboard</a></li>
+                                <li><a href="idegenerering.html">Idégenerering</a></li>
+                                <li><a href="appelformer.html">Appelformer</a></li>
+                                <li><a href="vandfaldsmodellen.html">Vandfaldsmodellen</a></li>
+                                <li><a href="scrum.html">Scrum</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Virksomheden<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="brugsmodelloven.html">Lovgivning</a></li>
+                                <li><a href="licensieringsmetoder.html">Licensiering</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="omverdensmodellen.html">Omverdensmodellen</a></li>
+                                <li><a href="dennyebollemodel.html">Den nye bollemodel</a></li>
+                                <li><a href="swotanalyse.html">SWOT-analysen</a></li>
+                                <li><a href="buisnessmodecanvas.html">Business model canvas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Her starter div class="container", some indeholder alle "rows". --> 
+    <div class="container">
+        <h1 id="forsideoverskrift">Min portfolio</h1>
+        <!-- herunder starter den første "row". Denne indeholder i dette tilfælde kun et article element, som jeg har sat til at fylde alle 12 kolonner, både både en smal og en bred skærm. Jeg har kun brugt kode til det mindste og det mellemste breakpoint, da xs også gælder for sm, og md også gælder for lg -->
+        <div class="row">
+            <article class="col-xs-12 col-md-12" id="introarticle">
+                <h2 id="introtitle">Introduktion</h2>
+                Mit navn er Joakim Bram Ziou, og jeg går på Multimediedesigner uddannelsen i Skive. Jeg har på dette website lagt alle mine noter fra semestret ind, og struktureret det på en måde, som jeg føler virker mest logisk. Formålet med dette website er nemlig, at det skal bruges som et opslagsværk, som jeg løbende gennem de kommende semestre, har tænkt mig at tilføje nyt materiale til, og derudover er det en del af mit eksamensprojekt på første semester.
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-xs-12 col-md-12" id="reflektionarticle">
+                <h2 id="reflektiontitle">Reflektion over personlige udvikling</h2>
+                Siden jeg startede på mmd uddannelsen, har jeg gennemgået en yderst lærerig proces, som både har fundet sted på skolen gennem lærens undervisning, gennem projektarbejde med mine medstuderende, men ikke mindst gennem selvstudie derhjemme. Jeg føler mig godt tilpas ved alle disse indlæringsformer, og man lærer vigtige ting fra dem hver især, men lige nøjagtigt det med selvstudie, er noget som jeg føler, har spillet en overraskende stor rolle i forhold min indlæring. Dette er fordi, inden for mmd uddannelsen er der så mange forskellige og nyttige programmer at mestre, og fordi uddannelsen i høj grad er præget af det kunstneriske element, så det giver god mening, at langt de fleste af arbejdsområderne, er nogle man kun kan blive god til, ved at i høj grad arbejde med dem i praksis.
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-xs-12 col-md-6" id="dovarticle">
+                <h4>Design og visualisering</h4>
+                Design og visualisering, som er et af de 4 hovedfag, har vist sig at have langt dybere flere, og dybere lag, end jeg forstillede mig før jeg startede på uddannelsen. Især finder jeg det spændende, hvordan man inden for faget særdeles sammenkæder design og psykologi, og hvor stor en forskel viden inden for dette felt, kan gøre for sit endelige produkt. Derudover er jeg nu begyndt at benytte Photoshop til rigtigt mange opgaver, og er blevet meget glad for at bruge programmet, både i direkte forbindelse med uddannelsen, men også i høj grad i forbindelse med egen hobby.
+            </article>
+
+            <article class="col-xs-12 col-md-6" id=iuarticle>
+                <h4>Interaktionsudvikling</h4> 
+                Interaktionsudvikling er nok det fag hvor jeg føler, at min interesse, i takt med mine færdigheder, er vokset hurtigst. Selvom jeg allerede før jeg startede på mmd-uddannelsen havde en vis interesse for kode, var det begrænset hvor meget jeg havde arbejdet med det. Faget har også introduceret mig for adskillig nye fagord, som jeg i starten fandt meget forvirrende at finde rundt i, men som efter hånden er faldet godt på plads, og fået ”puslespillet” til give mening. Noget jeg især ser frem til er, at prøve at arbejde med noget JavaScript til næste semester.
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-xs-12 col-md-6" id="kofarticle">
+                <h4>Kommunikation og formidling</h4>
+                Kommunikation og formidling er et fag som har overrasket mig på mange måder. Til at starte med, havde jeg ikke forventet, at det var et fag, hvor man ville komme til at bruge sin kreativitet i så høj en grad. Mest af alt, har jeg nok undervurderet hvor stor en nytte man kan drage af diverse idégenereringsteknikker. Teknikker som mere eller mindre kan bruges inden for alle uddannelsens fagområder. Derudover har jeg fået en dybere forståelse for mediehåndtering, hvilket jeg synes danner god forudsætning for videre indlæring af faget.
+            </article>
+
+            <article class="col-xs-12 col-md-6" id=virkarticle>
+                <h4>Virksomheden</h4> 
+                Virksomheden er et fag, som jeg på forhånd havde noget kendskab til før jeg startede på Erhvervsakademi Dania i Skive, i det jeg har tilbragt 3 år på handelsskolen. Det er dog et stort fagområde, og jeg har fået en masse ny viden på dette semester. Især inden for lovgivning og licensiering har jeg lært meget nyt. Selvom det ofte er et område som godt kan virke ret tørt, har jeg kunne se sammenhængene mellem det og de mere interessante sider ved mmd-uddannelsen, hvilket har gjort det noget nemmere og mere interessevækkende at forholde sig til.
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-xs-12 col-md-12" id="portfolioref">
+                <h2 id="PortfolioRefOverskrift">Arbejdsproces med portfolio</h2>
+                <p>Jeg begyndte mit eksamensprojekt med, at lave en tidsplan. I denne tidsplan havde jeg fastlagt, at jeg senest fredag d. 22. december skulle være helt færdig med at indsamle, nedskrive, og skabe overblik over alt det indhold jeg ville have med i min læringsportfolio. Efter jeg havde indsamlet, og skabt overblik over indholdet, skitserede jeg en wireframe over navbaren og forside. Derefter påbegyndte jeg min kode, og fik det hele sat op inde på mit website. Til sidst tilføjede jeg mit CSS.</p>
+                <p>Under indsamling af indhold, brugte jeg i høj grad studieordningens oversigt over læringsmål, hvilket var en stor hjælp, da den forklarede meget præcist hvad jeg skulle have med.</p>
+                <p>Da jeg kom til at skulle lave mit design, overvejede jeg, om jeg skulle bruge Bootstrap til en del af det, selvom vi kun lige er blevet introduceret for det. Jeg bestemte mig for at det ville være passende, hvilket jeg er glad for at jeg gjorde. Med Bootstrap er det efter min mening nemt og hurtigt, at lave noget, som ser flot og overskueligt ud, men der er også negative sider ved metoden. For det første vil mit website designmæssigt komme til at ligner andre websites, som også har brugt Bootstrap. Dernæst skal besøgende loade Bootstraps bibliotek, hvilket godt kan tage dyrebare millisekunder. Men da dette er tiltænkt som værende et opslagsværk til mig selv, giver det god mening at bruge dette framework alligevel.</p>
+                <p>Under hele arbejdsprocessen med min læringsportfolio, har jeg haft i baghovedet, at det skal fungere som et opslagsværk. Derfor har jeg så vidt som muligt forsøgt, at lave det så brugervenligt og visuelt enkelt, som jeg kunne. En af de metoder jeg har brugt for at opnå dette, er ved at sætte alle mine billeder på linje, og give dem den samme bredde. Herudover har jeg forsøgt at skabe noget whitespace, for at på diskret vis lægge fokus på, hvad der er vigtigt.</p>
+
+            </article>
+
+        </div>
+    </div>
+    <!-- her slutter container-->
+
+    <!-- jQuery (Nødvendigt for Bootstraps JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Her starter min footer -->
+    <footer id="footer">
+        Joakim Bram Ziou - Multimediedesigner 2017 - 2019<br>Erhvervsakademi Dania Skive
+    </footer>
+</body>
+
+</html>

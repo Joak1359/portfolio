@@ -1,0 +1,198 @@
+/* Top margen på 50px for at gøre plads til nav baren */
+body {
+    padding-top: 50px;
+}
+/* en class som inkludere alle billeder til gestalt love. Sørger for at de alle har samme brede, og en top-margin på 30 pixel, for at de ikke ligger helt op af hinanden, og ikke ligger helt op af teksten ved det mindste breakpoint. */
+.gestaltpic {
+    margin-top: 30px;
+    width: 300px;
+}
+
+/* Her er der til forskel fra den overnstående brugt et id, da det hanler om et specifikt billede. Denne kode gør så det store billede i toppen af typografi.html, hele tiden har en brede på 100%. */
+#typeanatomy {
+    width: 100%;
+}
+
+/* Denne selector inkluderer alle billederne til farveteori, så de alle har den samme bredde, og 30 ixels på margin-top. */
+.farveteoripic {
+    width: 220px;
+    margin-top: 30px
+}
+
+.shieldgrafik {
+    width: 450px;
+    margin-top: 15px;
+}
+
+.adobepics {
+    width: 450px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.bestviewed {
+    width: 200px;
+}
+
+#wireframes {
+    width: 500px;
+}
+
+#asgersketch {
+    width: 600px;
+}
+
+#idestafetpic {
+    width: 600px;
+}
+
+#vandfaldsmodellen {
+    width: 600px;
+}
+
+.scrumjobs {
+    width: 450px;
+}
+
+.kilder {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#pstop {
+    
+}
+
+#pstoptext {
+    margin-bottom: 50px;
+}
+
+#idtop {
+    
+}
+
+#vptop {
+    
+}
+
+#iltop {
+    
+}
+
+#introtitle {
+    
+}
+/* Hører til det "article" som ligger øverst på forsiden, hvori jeg har skrevet en introduktion. Jeg har ved hjælp af css koden "border" stylet artiklens border, ved at give den double kant, gøre den lidt tykkere og gøre den mørkere så den bedre passer til sitets farve tema.*/
+#introarticle {
+    border-width: thick;
+    border-style: double;
+    border-color: dimgray;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#reflektiontitle {
+    
+}
+
+#reflektionarticle {
+    border-width: thick;
+    border-style: double;
+    border-bottom-width: thin;
+    border-bottom-style:none;
+    border-color: dimgray;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#dovarticle {
+    border-width: thick;
+    border-style: double;
+    border-bottom-width: thin;
+    border-top-width: thin;
+    border-bottom-style: none;
+    border-color: dimgray;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#iuarticle {
+    border-width: thick;
+    border-style: double;
+    border-bottom-width: thin;
+    border-top-width: thin;
+    border-bottom-style:none;
+    border-color: dimgray;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#kofarticle {
+    border-width: thick;
+    border-style: double;
+    border-bottom-width: thin;
+    border-top-width: thin;
+    border-bottom-style: thin;
+    border-color: dimgray;
+    text-align: center;
+    padding: 20px;
+}
+
+#virkarticle {
+    border-width: thick;
+    border-style: double;
+    border-bottom-width: thin;
+    border-top-width: thin;
+    border-bottom-style: thin;
+    border-color: dimgray;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#forsideoverskrift {
+    text-align: center;
+}
+
+#PortfolioRefOverskrift {
+    text-align: center;    
+}
+
+#portfolioref {
+    border-width: thick;
+    border-style: double;
+    border-color: dimgray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    color: black;
+}
+
+#indesignkolonnertext {
+    margin-top: 50px;
+}
+
+#indesignfolder {
+    margin-bottom: 50px;
+}
+
+#heinepic {
+    margin-top: 30px;
+}
+
+#snapvideo {
+    margin-top: 20px;
+}
+
+.cclicenser {
+    margin-top: 40px;
+}
